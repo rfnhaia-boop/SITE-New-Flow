@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="New Flow ERP — Gestão que flui com o seu negócio. Sistema ERP SaaS brasileiro completo: PDV, Vendas, Compras, Financeiro, Fiscal e Emissão de NF-e integrada." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="New Flow ERP — Gestão que flui com o seu negócio" />
+  <meta property="og:description" content="Sistema ERP SaaS brasileiro completo com PDV, Vendas, Compras, Financeiro, Fiscal e Emissão de NF-e integrada." />
+  <meta property="og:type" content="website" />
+  <title>New Flow — Gestão que flui com o seu negócio</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo-main.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========================================
+     NAVBAR
+======================================== -->
+<header class="navbar" role="banner">
+  <div class="container">
+    <a href="#hero" class="navbar-logo" aria-label="New Flow — Início">
+      <img src="assets/images/logo-main.jpg" alt="New Flow logo" class="navbar-logo-img" />
+      <span class="navbar-logo-text">NEW FLOW</span>
+    </a>
+
+    <nav class="navbar-nav" role="navigation" aria-label="Navegação principal">
+      <a href="#modulos">Módulos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="https://newflow.newcompanysys.com/login?reason=session-expired" class="btn btn-outline btn-sm" id="nav-login">Entrar</a>
+      <a href="#planos" class="btn btn-primary btn-sm" id="nav-cta">Comece grátis</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+  <button class="mobile-menu-close" id="menuClose" aria-label="Fechar menu">✕</button>
+  <a href="#modulos">Módulos</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#planos">Planos</a>
+  <a href="#contato">Contato</a>
+  <a href="https://newflow.newcompanysys.com/login?reason=session-expired" class="btn btn-outline btn-lg" id="mobile-login" style="margin-top: 20px; width: 100%;">Entrar</a>
+  <a href="#planos" class="btn btn-primary btn-lg" id="mobile-cta" style="margin-top: 10px; width: 100%;">Comece grátis</a>
+</nav>
+
+<!-- ========================================
+     HERO
+======================================== -->
+<section class="hero" id="hero" role="main">
+  <div class="hero-video-wrap" aria-hidden="true">
+    <video
+      class="hero-video"
+      id="heroVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="assets/images/logo-main.jpg"
+    >
+      <source src="assets/images/video-logo-new-flow.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-video-overlay"></div>
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  </div>
+  <div class="hero-inner">
+
+    <div class="hero-logo-wrap">
+      <div class="hero-logo-symbol-wrap">
+        <img src="assets/images/logo-main.jpg" alt="New Flow símbolo N fluido" class="hero-logo-symbol" />
+      </div>
+      <span class="hero-logo-name">NEW FLOW</span>
+    </div>
+
+    <div class="hero-badge">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      ERP SaaS 100% Brasileiro
+    </div>
+
+    <h1 class="hero-title">
+      Gestão que <strong>flui</strong><br />com o seu negócio
+    </h1>
+
+    <p class="hero-subtitle">
+      Controle total das suas operações em uma única plataforma — do PDV à emissão de NF-e, simples como deve ser.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#planos" class="btn btn-primary btn-lg" id="hero-cta-free">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Comece grátis
+      </a>
+      <a href="#diferenciais" class="btn btn-outline btn-lg" id="hero-cta-demo">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Ver demonstração
+      </a>
+    </div>
+
+    <div class="hero-social-proof">
+      <div class="proof-item">
+        <svg class="proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Sem cartão de crédito
+      </div>
+      <div class="proof-item">
+        <svg class="proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Dados seguros e criptografados
+      </div>
+      <div class="proof-item">
+        <svg class="proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Suporte especializado BR
+      </div>
+      <div class="proof-item">
+        <svg class="proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Configuração em minutos
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-mouse"></div>
+    <span>Rolar</span>
+  </div>
+</section>
+
+<!-- ========================================
+     MODULES
+======================================== -->
+<section class="modules" id="modulos" aria-labelledby="modulos-title">
+  <div class="container">
+    <div class="modules-header reveal">
+      <span class="section-label">Módulos</span>
+      <h2 class="section-title" id="modulos-title">Tudo que sua empresa precisa,<br /><strong>em um só lugar</strong></h2>
+      <p class="section-subtitle">Módulos integrados que se adaptam ao seu fluxo de trabalho. Ative apenas o que você precisa.</p>
+    </div>
+
+    <div class="modules-grid">
+
+      <!-- PDV -->
+      <article class="module-card reveal reveal-delay-1" aria-label="Módulo PDV">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>PDV</h3>
+        <p>Ponto de venda ágil e intuitivo. Venda com ou sem conexão com a internet, com controle de caixa completo.</p>
+        <span class="module-tag">Frente de loja</span>
+      </article>
+
+      <!-- Vendas -->
+      <article class="module-card reveal reveal-delay-2" aria-label="Módulo Vendas">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
+        <h3>Vendas</h3>
+        <p>Gestão completa do funil de vendas, pedidos, orçamentos e histórico de clientes em tempo real.</p>
+        <span class="module-tag">Comercial</span>
+      </article>
+
+      <!-- Compras -->
+      <article class="module-card reveal reveal-delay-3" aria-label="Módulo Compras">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <h3>Compras</h3>
+        <p>Cotações, ordens de compra e controle de fornecedores integrados ao estoque automaticamente.</p>
+        <span class="module-tag">Suprimentos</span>
+      </article>
+
+      <!-- Financeiro -->
+      <article class="module-card reveal reveal-delay-1" aria-label="Módulo Financeiro">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3>Financeiro</h3>
+        <p>Contas a pagar e receber, fluxo de caixa, conciliação bancária e DRE automático.</p>
+        <span class="module-tag">Finanças</span>
+      </article>
+
+      <!-- Fiscal -->
+      <article class="module-card reveal reveal-delay-2" aria-label="Módulo Fiscal">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <h3>Fiscal</h3>
+        <p>Emissão de NF-e, NFS-e e NFC-e integrada. SPED, DCTF e obrigações acessórias em dia.</p>
+        <span class="module-tag">Tributário</span>
+      </article>
+
+      <!-- Relatórios -->
+      <article class="module-card reveal reveal-delay-3" aria-label="Módulo Relatórios">
+        <div class="module-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+        </div>
+        <h3>Relatórios</h3>
+        <p>Dashboards em tempo real com indicadores personalizados. Tome decisões com dados precisos e claros.</p>
+        <span class="module-tag">Business Intelligence</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     DIFFERENTIALS
+======================================== -->
+<section class="differentials" id="diferenciais" aria-labelledby="diferenciais-title">
+  <div class="container">
+    <div class="differentials-inner">
+
+      <div class="differentials-text reveal">
+        <span class="section-label">Por que New Flow?</span>
+        <h2 class="section-title" id="diferenciais-title">Simples por fora,<br /><strong>poderoso por dentro</strong></h2>
+        <p class="section-subtitle">Projetado para empresas brasileiras que precisam de eficiência sem complicação. Onboarding em minutos, não em semanas.</p>
+      </div>
+
+      <div class="differentials-cards">
+        <div class="diff-card reveal reveal-delay-1">
+          <div class="diff-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="diff-content">
+            <h3>Simples de usar</h3>
+            <p>Interface projetada para que qualquer colaborador domine o sistema em minutos, sem treinamentos longos.</p>
+          </div>
+        </div>
+
+        <div class="diff-card reveal reveal-delay-2">
+          <div class="diff-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/>
+            </svg>
+          </div>
+          <div class="diff-content">
+            <h3>100% na nuvem</h3>
+            <p>Acesse de qualquer lugar, qualquer dispositivo. Backups automáticos e atualizações contínuas sem custo adicional.</p>
+          </div>
+        </div>
+
+        <div class="diff-card reveal reveal-delay-3">
+          <div class="diff-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+            </svg>
+          </div>
+          <div class="diff-content">
+            <h3>Emissão de NF-e integrada</h3>
+            <p>Emita NF-e, NFS-e e NFC-e sem sair do sistema. Totalmente integrado à SEFAZ, sem plugins externos.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     OFFICE IMAGE
+======================================== -->
+<section class="office-section" aria-label="New Flow em ambiente corporativo">
+  <div class="container">
+    <div class="office-image-wrap reveal">
+      <img src="assets/images/logo-office.jpg" alt="Logo New Flow em ambiente corporativo moderno" loading="lazy" />
+      <div class="office-image-overlay" aria-hidden="true"></div>
+      <div class="office-caption">
+        <h3>NEW FLOW</h3>
+        <p>Gestão corporativa de ponta a ponta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     PLANS
+======================================== -->
+<section class="plans" id="planos" aria-labelledby="planos-title">
+  <div class="container">
+
+    <div class="plans-header reveal">
+      <span class="section-label">Planos</span>
+      <h2 class="section-title" id="planos-title">Preço justo para<br /><strong>qualquer tamanho de empresa</strong></h2>
+      <p class="section-subtitle">Comece grátis por 30 dias, sem cartão de crédito. Cancele quando quiser.</p>
+
+      <div class="billing-toggle" role="group" aria-label="Tipo de cobrança">
+        <input type="radio" name="billing" id="billing-monthly" value="monthly" checked />
+        <label for="billing-monthly">Mensal</label>
+        <input type="radio" name="billing" id="billing-annual" value="annual" />
+        <label for="billing-annual">Anual <span class="billing-save">−25%</span></label>
+      </div>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- Starter -->
+      <div class="plan-card reveal reveal-delay-1">
+        <p class="plan-name">Starter</p>
+        <div class="plan-price-wrap">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price" data-plan="starter">150</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <p class="plan-price-note">cobrado mensalmente</p>
+        <div class="plan-divider" aria-hidden="true"></div>
+        <ul class="plan-features" aria-label="Recursos do plano Starter">
+          <li class="plan-feature highlight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>50 emissões</strong> de notas /mês
+          </li>
+          <li class="plan-feature highlight-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Nota excedente: <strong>R$ 2,00</strong> cada
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            PDV + Vendas + Compras
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Módulo Financeiro básico
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Até 5 usuários
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Suporte por e-mail e chat
+          </li>
+        </ul>
+        <div class="plan-cta">
+          <a href="https://newflow.newcompanysys.com/login?reason=session-expired" class="btn btn-outline" id="plan-starter-cta" style="width: 100%; justify-content: center;">Assinar Starter</a>
+        </div>
+      </div>
+
+      <!-- Professional -->
+      <div class="plan-card popular reveal reveal-delay-2" aria-label="Plano recomendado">
+        <span class="popular-badge">Popular</span>
+        <p class="plan-name">Professional</p>
+        <div class="plan-price-wrap">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price" data-plan="professional">259</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <p class="plan-price-note">cobrado mensalmente</p>
+        <div class="plan-divider" aria-hidden="true"></div>
+        <ul class="plan-features" aria-label="Recursos do plano Professional">
+          <li class="plan-feature highlight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>200 emissões</strong> de notas /mês
+          </li>
+          <li class="plan-feature highlight-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Nota excedente: <strong>R$ 1,00</strong> cada
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Todos os módulos completos
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Relatórios e BI avançado
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Até 20 usuários
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Suporte prioritário 24/7
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Integrações via API
+          </li>
+        </ul>
+        <div class="plan-cta">
+          <a href="https://newflow.newcompanysys.com/login?reason=session-expired" class="btn btn-primary" id="plan-pro-cta" style="width: 100%; justify-content: center;">Assinar Professional</a>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="plan-card reveal reveal-delay-3">
+        <p class="plan-name">Enterprise</p>
+        <div class="plan-price-wrap">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price" data-plan="enterprise">670</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <p class="plan-price-note">cobrado mensalmente</p>
+        <div class="plan-divider" aria-hidden="true"></div>
+        <ul class="plan-features" aria-label="Recursos do plano Enterprise">
+          <li class="plan-feature highlight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>500 emissões</strong> de notas /mês
+          </li>
+          <li class="plan-feature highlight-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Nota excedente: <strong>R$ 0,50</strong> cada
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Tudo do Professional
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Usuários ilimitados
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Multi-empresa e multi-filial
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            SLA garantido 99,9%
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Gerente de conta dedicado
+          </li>
+          <li class="plan-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Implantação assistida
+          </li>
+        </ul>
+        <div class="plan-cta">
+          <a href="https://newflow.newcompanysys.com/login?reason=session-expired" class="btn btn-outline" id="plan-enterprise-cta" style="width: 100%; justify-content: center;">Falar com vendas</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CTA FINAL
+======================================== -->
+<section class="cta-section" id="contato" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-inner">
+
+      <img src="assets/images/logo-main.jpg" alt="New Flow" class="cta-logo-icon reveal" />
+
+      <span class="section-label reveal">Começar agora</span>
+      <h2 class="section-title reveal" id="cta-title">Teste <strong>30 dias grátis</strong>,<br />sem compromisso</h2>
+      <p class="section-subtitle reveal" style="margin-top: 12px;">
+        Junte-se a centenas de empresas brasileiras que já simplificaram sua gestão com o New Flow.
+      </p>
+
+      <form class="cta-form reveal" id="ctaForm" novalidate role="form" aria-label="Formulário de cadastro">
+        <label for="ctaEmail" class="sr-only">Seu melhor e-mail</label>
+        <input
+          type="email"
+          id="ctaEmail"
+          class="cta-input"
+          placeholder="Seu melhor e-mail"
+          autocomplete="email"
+          required
+          aria-required="true"
+        />
+        <button type="submit" class="btn btn-primary" id="ctaBtn">
+          Começar grátis
+        </button>
+      </form>
+
+      <p class="cta-note reveal reveal-delay-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Sem cartão de crédito · Cancele quando quiser · Dados 100% seguros
+      </p>
+
+      <div class="cta-success" id="ctaSuccess" role="alert" aria-live="polite">
+        <div class="cta-success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>Acesso enviado para <strong id="ctaSuccessEmail"></strong></p>
+        <span>Verifique sua caixa de entrada e spam.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+<footer class="footer" id="rodape" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo-main.jpg" alt="New Flow" class="footer-logo-img" />
+          <span class="footer-logo-name">NEW FLOW</span>
+        </div>
+        <p class="footer-tagline">Gestão que flui com o seu negócio. ERP SaaS 100% brasileiro.</p>
+        <div class="footer-socials" aria-label="Redes sociais">
+          <!-- Instagram -->
+          <a href="#" class="footer-social" aria-label="New Flow no Instagram" id="footer-instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="footer-social" aria-label="New Flow no LinkedIn" id="footer-linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="#" class="footer-social" aria-label="New Flow no YouTube" id="footer-youtube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/5511936202934" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Fale conosco no WhatsApp" id="footer-whatsapp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Produto</h4>
+        <ul>
+          <li><a href="#modulos">Módulos</a></li>
+          <li><a href="#planos">Planos e Preços</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Integrações</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Parceiros</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="https://newflow.newcompanysys.com/login?reason=session-expired">Documentação</a></li>
+          <li><a href="#">Status do Sistema</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Comunidade</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2026 <a href="#">New Company</a>. Desenvolvido por <a href="https://nwn-site-ten.vercel.app/" target="_blank" rel="noopener noreferrer">NWN</a>. Todos os direitos reservados. CNPJ 55.672.936/0001-50
+      </p>
+      <nav class="footer-legal" aria-label="Links legais">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">LGPD</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
