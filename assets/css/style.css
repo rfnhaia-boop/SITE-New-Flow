@@ -1118,6 +1118,83 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
 .cta-success span { font-size: 13px; color: var(--gray-400); }
 
 /* =========================================
+   ECOSSISTEMA NWN
+   ========================================= */
+.ecosystem {
+  padding: 0 0 var(--section-pad);
+  background: var(--white);
+}
+.ecosystem-strip {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 36px;
+  border-radius: var(--radius-xl);
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(126,200,160,0.22);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+}
+.ecosystem-strip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 4px;
+  background: var(--gradient-brand);
+}
+.ecosystem-strip:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(126,200,160,0.4);
+}
+.ecosystem-mark {
+  width: 52px; height: 52px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-brand);
+  box-shadow: var(--shadow-brand);
+}
+.ecosystem-mark svg { width: 26px; height: 26px; color: white; }
+.ecosystem-text { flex: 1; min-width: 0; }
+.ecosystem-text h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--gray-900);
+  letter-spacing: -0.01em;
+}
+.ecosystem-text h3 strong {
+  font-weight: 600;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ecosystem-text p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray-600);
+  margin-top: 2px;
+}
+.ecosystem-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--green);
+  white-space: nowrap;
+  transition: gap var(--transition-fast);
+}
+.ecosystem-cta svg { width: 17px; height: 17px; }
+.ecosystem-strip:hover .ecosystem-cta { gap: 12px; }
+
+/* =========================================
    FOOTER
    ========================================= */
 .footer {
@@ -1277,4 +1354,12 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
 
   .office-image-wrap img { height: 260px; }
   .office-caption { bottom: 20px; left: 24px; }
+
+  .ecosystem-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    text-align: left;
+  }
 }
