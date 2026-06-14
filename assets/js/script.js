@@ -87,9 +87,27 @@ document.addEventListener('DOMContentLoaded', () => {
     render();
   }
 
-  /* ── Autoplay vídeo hero ───────────────── */
+  /* ── Vídeo hero: troca desktop ⇄ celular + autoplay ── */
   const heroVideo = document.getElementById('heroVideo');
   if (heroVideo) {
+    const heroSource = document.getElementById('heroVideoSource');
+    const mqMobile = window.matchMedia('(max-width: 640px)');
+
+    const applyHeroSource = () => {
+      const wanted = mqMobile.matches
+        ? heroVideo.dataset.videoMobile
+        : heroVideo.dataset.videoDesktop;
+      if (!wanted || !heroSource) return;
+      // só recarrega se realmente mudou
+      if (heroSource.getAttribute('src') === wanted) return;
+      heroSource.setAttribute('src', wanted);
+      heroVideo.load();
+      heroVideo.play().catch(() => {});
+    };
+
+    applyHeroSource();
+    mqMobile.addEventListener('change', applyHeroSource);
+
     heroVideo.play().catch(() => {
       document.addEventListener('click', () => heroVideo.play(), { once: true });
     });
